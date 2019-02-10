@@ -62,9 +62,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Torch" parent="CameraBody" index="1" instance=ExtResource( 4 )]
 
-scale = Vector2( 0.5, 0.5 )
-offset = Vector2( 355, 0 )
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Shadow", "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CameraBody" index="2"]
 

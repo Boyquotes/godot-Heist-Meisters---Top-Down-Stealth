@@ -1,11 +1,12 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Tilesets/FloorTiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Scenes/Characters/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/SecurityCamera.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Tilesets/Autotile.tres" type="TileSet" id=4]
+[ext_resource path="res://Scenes/Characters/Guard.tscn" type="PackedScene" id=5]
 
-[node name="Level1" type="Node2D"]
+[node name="Level1" type="Node2D" index="0"]
 
 position = Vector2( 550.547, 312.165 )
 
@@ -104,5 +105,12 @@ _sections_unfolded = [ "Collision" ]
 [node name="CanvasModulate" type="CanvasModulate" parent="." index="4"]
 
 color = Color( 0.183535, 0.128174, 0.292969, 1 )
+
+[node name="Guards" type="Node2D" parent="." index="5"]
+
+[node name="Guard" parent="Guards" index="0" instance=ExtResource( 5 )]
+
+position = Vector2( 289.187, 193.534 )
+_sections_unfolded = [ "Collision", "collision" ]
 
 
