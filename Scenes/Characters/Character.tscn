@@ -6,18 +6,17 @@
 [sub_resource type="CapsuleShape2D" id=1]
 
 custom_solver_bias = 0.0
-radius = 8.16222
-height = 28.3955
+radius = 9.92417
+height = 25.6485
 
 [sub_resource type="OccluderPolygon2D" id=2]
 
 closed = true
 cull_mode = 1
-polygon = PoolVector2Array( -11.0163, -7.99492, -10.213, -16.4867, -7.34418, -20.2736, -2.86877, -21.4212, 1.26237, -21.0769, 4.93451, -18.208, 6.31156, -12.2408, 6.65582, -6.73262, 6.88533, 0.611649, 6.42632, 7.4969, 6.08205, 16.4477, 3.67222, 19.8904, -0.229431, 20.9231, -6.42616, 20.4641, -9.0655, 17.4805, -10.5573, 12.8903 )
+polygon = PoolVector2Array( -11.9748, -8.88934, -9.88136, -18.31, -6.21775, -22.6017, 1.00478, -23.0204, 6.2385, -18.4147, 8.12264, -9.62206, 9.48341, -0.724737, 7.38992, 11.2081, 3.41229, 19.4774, -7.57852, 19.0587, -11.3468, 13.6157, -11.6608, 5.2417 )
 
 [node name="Character" type="KinematicBody2D"]
 
-position = Vector2( 0, 0.191666 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -33,12 +32,13 @@ texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
-position = Vector2( -1.9166, 0 )
+visible = false
+position = Vector2( -1.77946, 0.209347 )
 shape = SubResource( 1 )
-_sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="." index="2"]
 
+position = Vector2( 0, 1.6748 )
 occluder = SubResource( 2 )
 light_mask = 1
 
