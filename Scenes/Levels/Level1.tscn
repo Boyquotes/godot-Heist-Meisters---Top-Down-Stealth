@@ -192,6 +192,7 @@ position = Vector2( 188.285, 671.369 )
 
 [node name="VisionMode" type="CanvasModulate" parent="." index="5"]
 
+visible = false
 color = Color( 0.0588235, 0.113725, 0.32549, 1 )
 script = ExtResource( 7 )
 _sections_unfolded = [ "Visibility" ]
