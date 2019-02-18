@@ -18,7 +18,6 @@ func _on_Door_body_exited(body):
 		can_click = false
 
 func open():
-	print(123)
 	$AnimationPlayer.play("open")
 
 func _input_event(viewport, event, shape_idx):

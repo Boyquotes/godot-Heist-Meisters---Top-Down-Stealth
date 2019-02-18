@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Tilesets/FloorTiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Scenes/Characters/Player.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Scenes/Characters/Guard.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Tilesets/Furniture.tres" type="TileSet" id=9]
 [ext_resource path="res://Scenes/Door.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/LockedDoor.tscn" type="PackedScene" id=11]
 
 [sub_resource type="NavigationPolygon" id=1]
 
@@ -255,15 +256,19 @@ tile_data = PoolIntArray( -65520, 1, 0, 65539, 0, 0, 196616, -1610612735, 0, 327
 
 [node name="Doors" type="Node2D" parent="." index="8"]
 
-editor/display_folded = true
-
 [node name="Door" parent="Doors" index="0" instance=ExtResource( 10 )]
 
 position = Vector2( 290, 350 )
 
 [node name="Door2" parent="Doors" index="1" instance=ExtResource( 10 )]
 
-position = Vector2( 678.367, 291.447 )
+position = Vector2( 1186.92, 221.417 )
+rotation = 1.5708
+_sections_unfolded = [ "Collision", "Transform" ]
+
+[node name="LockedDoor" parent="Doors" index="2" instance=ExtResource( 11 )]
+
+position = Vector2( 669.194, 289.194 )
 rotation = 1.5708
 _sections_unfolded = [ "Collision", "Transform" ]
 
