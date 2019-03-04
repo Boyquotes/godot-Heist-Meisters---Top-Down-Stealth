@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Tilesets/FloorTiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Scenes/Characters/Player.tscn" type="PackedScene" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://Scenes/Door.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Scenes/LockedDoor.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Scenes/CombinationGenerator.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Scenes/Computer.tscn" type="PackedScene" id=13]
 
 [sub_resource type="NavigationPolygon" id=1]
 
@@ -19,7 +20,7 @@ vertices = PoolVector2Array( 1797.67, -3.9891, 1605.94, -4.65251, 1402.27, -5.97
 polygons = [ PoolIntArray( 0, 1, 2, 3, 4, 5 ), PoolIntArray( 1, 0, 6 ), PoolIntArray( 7, 8, 9, 10, 11, 12, 13 ), PoolIntArray( 14, 15, 16, 17, 18 ), PoolIntArray( 19, 20, 21, 22, 23 ), PoolIntArray( 15, 14, 0, 24 ), PoolIntArray( 25, 26, 27, 28 ), PoolIntArray( 29, 30, 31, 32, 10, 9 ), PoolIntArray( 33, 26, 25, 34 ), PoolIntArray( 33, 34, 35, 36, 37, 38, 39 ), PoolIntArray( 35, 34, 40, 41 ), PoolIntArray( 42, 39, 43, 44, 45 ), PoolIntArray( 43, 39, 38, 46 ), PoolIntArray( 40, 28, 27, 47, 41 ), PoolIntArray( 48, 49, 50, 51, 52, 53 ), PoolIntArray( 54, 55, 56, 57, 58, 59 ), PoolIntArray( 60, 61, 62, 63 ), PoolIntArray( 64, 65, 66, 67, 68 ), PoolIntArray( 69, 70, 71, 53, 52, 72 ), PoolIntArray( 73, 74, 75, 76, 77 ), PoolIntArray( 78, 43, 46, 79 ), PoolIntArray( 80, 81, 45, 44, 82 ), PoolIntArray( 59, 83, 69, 72, 54 ), PoolIntArray( 84, 12, 11, 85, 62 ), PoolIntArray( 13, 86, 7 ), PoolIntArray( 87, 88, 89, 90, 91, 92, 93 ), PoolIntArray( 21, 94, 95, 96, 22 ), PoolIntArray( 5, 97, 24, 0 ), PoolIntArray( 4, 3, 49, 48 ), PoolIntArray( 98, 99, 100, 101, 96, 95 ), PoolIntArray( 9, 1, 6, 29 ), PoolIntArray( 17, 102, 18 ), PoolIntArray( 14, 18, 63, 31 ), PoolIntArray( 103, 104, 105, 106, 37, 36 ), PoolIntArray( 77, 107, 73 ), PoolIntArray( 87, 77, 76, 88 ), PoolIntArray( 7, 3, 2, 8 ), PoolIntArray( 13, 12, 19, 50 ), PoolIntArray( 51, 50, 19, 23, 101 ), PoolIntArray( 51, 101, 100, 55, 54 ), PoolIntArray( 45, 59, 58, 42 ), PoolIntArray( 106, 80, 82, 78, 79 ), PoolIntArray( 106, 79, 37 ), PoolIntArray( 93, 108, 87 ), PoolIntArray( 95, 93, 92, 98 ), PoolIntArray( 67, 109, 68 ), PoolIntArray( 64, 68, 104, 47 ), PoolIntArray( 110, 31, 63, 62, 111 ), PoolIntArray( 112, 113, 111, 62, 85 ), PoolIntArray( 31, 110, 32 ), PoolIntArray( 112, 10, 32, 113 ), PoolIntArray( 84, 62, 21, 20 ), PoolIntArray( 103, 41, 47, 104 ), PoolIntArray( 114, 33, 39, 57 ), PoolIntArray( 115, 114, 57, 56 ), PoolIntArray( 115, 56, 99, 98 ) ]
 outlines = [ PoolVector2Array( 130.177, 581.92, 128.706, 1084.72, 254.407, 1086.19, 249.997, 817.149, 329.386, 823.03, 328.651, 1079.58, 628.569, 1076.64, 630.039, 697.329, 823.368, 694.389, 825.573, 562.807, 961.565, 565.013, 966.081, 646.354, 905.047, 652.325, 901.73, 1078.24, 1269.93, 1078.24, 1269.26, 879.878, 1352.86, 881.205, 1352.19, 948.21, 1716.41, 948.21, 1709.78, 650.335, 1359.49, 647.681, 1354.85, 844.717, 1267.94, 843.39, 1265.28, 653.652, 1013.85, 652.325, 1013.85, 562.1, 1139.9, 562.763, 1139.9, 501.065, 1229.46, 500.402, 1227.47, 561.436, 1717.74, 563.427, 1718.41, 499.707, 1804.63, 500.904, 1803.98, 745.867, 2028.88, 748.521, 2026.23, 398.898, 1848.43, 392.264, 1851.08, 306.683, 2097.21, 307.346, 2098.54, -54.8812, 1100, -50, 1100, -10, 1020, -10, 1020, -50, 780.324, -54.8812, 780.987, 75.8127, 715.972, 74.4858, 713.982, 266.878, 624.42, 268.868, 626.41, 77.1395, 384.925, 79.1297, 390.896, 514.333, 324.554, 515.66, 326.544, 780.365, 246.27, 771.741, 241.626, 583.993 ), PoolVector2Array( 1222, 198, 1222, 72, 1349, 73, 1352, -7, 1137, -6, 1142, 196 ), PoolVector2Array( 1402.27, -5.97935, 1605.94, -4.65251, 1604.61, 68.9871, 1403.59, 68.3237 ), PoolVector2Array( 1656.36, -3.9891, 1797.67, -3.9891, 1797.67, 452.444, 1721.37, 451.781, 1719.38, 70.314, 1658.35, 66.9969 ), PoolVector2Array( 1404.92, 251.428, 1538.93, 252.091, 1538.27, 394.063, 1402.93, 395.39 ), PoolVector2Array( 1145.52, 249.437, 1221.82, 248.774, 1220.49, 458.415, 1146.85, 458.415 ), PoolVector2Array( 1019.47, 312.462, 1091.79, 312.462, 1092.45, 391.409, 1018.15, 389.419 ), PoolVector2Array( 827.745, 314.453, 902.711, 315.116, 903.374, 390.083, 825.091, 387.429 ), PoolVector2Array( 830.398, 187.739, 898.73, 187.739, 898.067, 264.033, 825.754, 264.033 ), PoolVector2Array( 635.353, 316.443, 710.319, 315.779, 709.656, 644.173, 633.362, 644.836 ), PoolVector2Array( 444.951, 506.181, 517.264, 507.508, 518.591, 583.801, 444.951, 581.811 ), PoolVector2Array( 1600, 400, 1600, 440, 1660, 440, 1660, 390 ), PoolVector2Array( 450, 330, 450, 380, 520, 380, 520, 320 ), PoolVector2Array( 380, 780, 380, 830, 470, 830, 450, 770 ), PoolVector2Array( 510, 970, 520, 1020, 570, 1020, 570, 970 ) ]
 
-[node name="Level1" type="Node2D" index="0"]
+[node name="Level1" type="Node2D"]
 
 [node name="Floors" type="TileMap" parent="." index="0"]
 
@@ -257,6 +258,8 @@ tile_data = PoolIntArray( -65520, 1, 0, 65539, 0, 0, 196616, -1610612735, 0, 327
 
 [node name="Doors" type="Node2D" parent="." index="8"]
 
+editor/display_folded = true
+
 [node name="Door" parent="Doors" index="0" instance=ExtResource( 10 )]
 
 position = Vector2( 290, 350 )
@@ -274,6 +277,11 @@ rotation = 1.5708
 _sections_unfolded = [ "Collision", "Transform" ]
 
 [node name="CombinationGenerator" parent="." index="9" instance=ExtResource( 12 )]
+
+[node name="Computer" parent="." index="10" instance=ExtResource( 13 )]
+
+position = Vector2( 230, 100 )
+combination_length = 4
 
 [connection signal="timeout" from="Player/VisionModeTimer" to="Player" method="_on_VisionModeTimer_timeout"]
 
