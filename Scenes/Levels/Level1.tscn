@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Tilesets/FloorTiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Scenes/Characters/Player.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://Scenes/LockedDoor.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Scenes/CombinationGenerator.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Scenes/Computer.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Theme.theme" type="Theme" id=14]
 
 [sub_resource type="NavigationPolygon" id=1]
 
@@ -198,6 +199,7 @@ position = Vector2( 188.285, 671.369 )
 
 [node name="VisionMode" type="CanvasModulate" parent="." index="5"]
 
+editor/display_folded = true
 visible = false
 color = Color( 0.0588235, 0.113725, 0.32549, 1 )
 script = ExtResource( 7 )
@@ -258,6 +260,8 @@ tile_data = PoolIntArray( -65520, 1, 0, 65539, 0, 0, 196616, -1610612735, 0, 327
 
 [node name="Doors" type="Node2D" parent="." index="8"]
 
+editor/display_folded = true
+
 [node name="Door" parent="Doors" index="0" instance=ExtResource( 10 )]
 
 position = Vector2( 290, 350 )
@@ -283,6 +287,33 @@ position = Vector2( 90, 190 )
 [node name="Computer" parent="." index="10" instance=ExtResource( 13 )]
 
 position = Vector2( 230, 100 )
+
+[node name="Map Labels" type="Node2D" parent="." index="11"]
+
+[node name="Label" type="Label" parent="Map Labels" index="0" groups=[
+"labels",
+]]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1430.0
+margin_top = 160.0
+margin_right = 1470.0
+margin_bottom = 174.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+theme = ExtResource( 14 )
+text = "dsadsadas"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Theme" ]
 
 [connection signal="timeout" from="Player/VisionModeTimer" to="Player" method="_on_VisionModeTimer_timeout"]
 
