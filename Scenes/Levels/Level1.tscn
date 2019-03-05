@@ -258,8 +258,6 @@ tile_data = PoolIntArray( -65520, 1, 0, 65539, 0, 0, 196616, -1610612735, 0, 327
 
 [node name="Doors" type="Node2D" parent="." index="8"]
 
-editor/display_folded = true
-
 [node name="Door" parent="Doors" index="0" instance=ExtResource( 10 )]
 
 position = Vector2( 290, 350 )
@@ -276,13 +274,20 @@ position = Vector2( 669.194, 289.194 )
 rotation = 1.5708
 _sections_unfolded = [ "Collision", "Transform" ]
 
+[node name="LockedDoor2" parent="Doors" index="3" instance=ExtResource( 11 )]
+
+position = Vector2( 90, 190 )
+
 [node name="CombinationGenerator" parent="." index="9" instance=ExtResource( 12 )]
 
 [node name="Computer" parent="." index="10" instance=ExtResource( 13 )]
 
 position = Vector2( 230, 100 )
-combination_length = 4
 
 [connection signal="timeout" from="Player/VisionModeTimer" to="Player" method="_on_VisionModeTimer_timeout"]
+
+[connection signal="combination" from="Computer" to="Doors/LockedDoor2" method="_on_Computer_combination"]
+
+[connection signal="combination" from="Computer" to="Doors/LockedDoor" method="_on_Computer_combination"]
 
 

@@ -5,9 +5,12 @@ var combination
 
 export var combination_length = 4
 
+signal combination
+
 func _ready():
 	$Light2D.enabled = false
 	generate_combination()
+	emit_signal("combination", combination)
 
 func generate_combination():
 	var combination_generator = get_tree().get_root().find_node("CombinationGenerator", true, false)
