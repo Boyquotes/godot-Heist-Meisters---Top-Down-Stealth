@@ -17,6 +17,7 @@ func _ready():
 	vision_mode = DARK
 	$Timer.wait_time = disguise_duration
 	$Label.visible = false
+	update_disguise_display()
 
 func _process(delta):
 	update_motion(delta)
@@ -76,7 +77,6 @@ func reveal():
 	$LightOccluder2D.occluder = load(Global.player_occluder)
 	collision_layer = 1
 	velocity_multiplier = 1
-	
 
 func disguise():
 	$Label.visible = true
@@ -87,3 +87,10 @@ func disguise():
 	collision_layer = 16
 	velocity_multiplier = disguise_slowdown
 	$Timer.start()
+	
+	disguises -= 1
+	update_disguise_display()
+
+func update_disguise_display():
+	get_tree().call_group("DisguiseDisplay", "update_disguises", disguises)
+	
